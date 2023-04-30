@@ -1,0 +1,54 @@
+{
+	"name": "monokai-vibrant",
+	"displayName": "Monokai Vibrant",
+	"description": "A very dark and vibrant Monokai based theme.",
+	"version": "0.5.3",
+	"publisher": "s3gf4ult",
+	"icon": "images/icon.png",
+	"author": "Dylan Marsh <dylan@knoware.co>",
+	"license": "MIT",
+	"galleryBanner": {
+		"color": "#16171d",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dylantmarsh/monokai-vibrant.git"
+	},
+	"bugs": {
+		"url": "https://github.com/dylantmarsh/monokai-vibrant/issues"
+	},
+	"homepage": "https://github.com/dylantmarsh/monokai-vibrant/blob/master/README.md",
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"monokai",
+		"vibrant",
+		"dark",
+		"colorful"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Monokai Vibrant",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Monokai Vibrant-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "40ae5cb7-e0d1-4d3d-b44f-1bea5279c6d7",
+		"publisherId": "e17173b9-9682-4213-ba62-13296c84b6f3",
+		"publisherDisplayName": "s3gf4ult",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": true,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1676282242378,
+		"preRelease": false
+	}
+}

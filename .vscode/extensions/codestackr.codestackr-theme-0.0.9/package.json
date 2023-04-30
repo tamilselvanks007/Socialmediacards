@@ -1,0 +1,73 @@
+{
+	"name": "codestackr-theme",
+	"displayName": "codeSTACKr Theme",
+	"description": "Never stop learning and Never give up! This theme is part of my VS Code SuperHero course. Check it out at: vsCodeHero.com",
+	"publisher": "codeSTACKr",
+	"author": {
+		"name": "Jesse Hall"
+	},
+	"version": "0.0.9",
+	"sponsor": {
+		"url": "https://github.com/sponsors/codeSTACKr"
+	},
+	"engines": {
+		"vscode": "^1.46.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/codestackr/codestackr-vscode-theme"
+	},
+	"bugs": {
+		"url": "https://github.com/codestackr/codestackr-vscode-theme/issues"
+	},
+	"galleryBanner": {
+		"color": "#09131b",
+		"theme": "dark"
+	},
+	"icon": "images/icon/logo_250x250.png",
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"codeSTACKr Theme",
+		"Dark Theme",
+		"VSCode SuperHero",
+		"vsCodeHero",
+		"codeSTACKr",
+		"blue",
+		"orange",
+		"Cobalt"
+	],
+	"badges": [
+		{
+			"url": "https://img.shields.io/badge/-Become%20a%20VS%20Code%20SuperHero%20%E2%86%92-gray.svg?colorB=ff652f&style=flat",
+			"href": "https://vsCodeHero.com",
+			"description": "Support this project!"
+		}
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "codeSTACKr Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/codeSTACKr-theme.json"
+			},
+			{
+				"label": "codeSTACKr Theme (Muted)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/codeSTACKr-theme-muted.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "0e84b054-8d35-40d2-b892-f40fa2fd78d9",
+		"publisherId": "cdf00c2a-5c74-49e8-94ca-e0900245e54c",
+		"publisherDisplayName": "codestackr",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": true,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1658590948062
+	}
+}

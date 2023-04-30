@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="36.679" tests="449" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-03-31T07:11:01" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Commands Test Suite" timestamp="2023-03-31T07:11:01" tests="0" file="/home/runner/work/vscode/vscode/out/test/suite/commands/launchMongoShell.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="bash env shell" timestamp="2023-03-31T07:11:01" tests="2" file="/home/runner/work/vscode/vscode/out/test/suite/commands/launchMongoShell.test.js" time="1.133" failures="0">
+    <testcase name="Commands Test Suite bash env shell openMongoDBShell should show an error message when not connected" time="0.001" classname="openMongoDBShell should show an error message when not connected">
+    </testcase>
+    <testcase name="Commands Test Suite bash env shell openMongoDBShell should open a terminal with the active connection driver url" time="0.001" classname="openMongoDBShell should open a terminal with the active connection driver url">
+    </testcase>
+  </testsuite>
+  <testsuite name="Windows powershell env shell" timestamp="2023-03-31T07:11:02" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/commands/launchMongoShell.test.js" time="0.003" failures="0">
+    <testcase name="Commands Test Suite Windows powershell env shell powershell openMongoDBShell should open a terminal with the active connection driver url" time="0.000" classname="powershell openMongoDBShell should open a terminal with the active connection driver url">
+    </testcase>
+  </testsuite>
+  <testsuite name="Windows cmd env shell" timestamp="2023-03-31T07:11:02" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/commands/launchMongoShell.test.js" time="0.003" failures="0">
+    <testcase name="Commands Test Suite Windows cmd env shell windows cmd openMongoDBShell should open a terminal with the active connection driver url" time="0.000" classname="windows cmd openMongoDBShell should open a terminal with the active connection driver url">
+    </testcase>
+  </testsuite>
+  <testsuite name="Connection Controller Test Suite" timestamp="2023-03-31T07:11:02" tests="32" file="/home/runner/work/vscode/vscode/out/test/suite/connectionController.test.js" time="0.000" failures="0">
+    <testcase name="Connection Controller Test Suite it connects to mongodb" time="0.050" classname="it connects to mongodb">
+    </testcase>
+    <testcase name="Connection Controller Test Suite &quot;disconnect()&quot; disconnects from the active connection" time="0.044" classname="&quot;disconnect()&quot; disconnects from the active connection">
+    </testcase>
+    <testcase name="Connection Controller Test Suite &quot;removeMongoDBConnection()&quot; returns a reject promise when there is no active connection" time="0.001" classname="&quot;removeMongoDBConnection()&quot; returns a reject promise when there is no active connection">
+    </testcase>
+    <testcase name="Connection Controller Test Suite &quot;disconnect()&quot; fails when there is no active connection" time="0.000" classname="&quot;disconnect()&quot; fails when there is no active connection">
+    </testcase>
+    <testcase name="Connection Controller Test Suite when adding a new connection it disconnects from the current connection" time="1.188" classname="when adding a new connection it disconnects from the current connection">
+    </testcase>
+    <testcase name="Connection Controller Test Suite when adding a new connection it sets the connection controller as connecting while it disconnects from the current connection" time="0.059" classname="when adding a new connection it sets the connection controller as connecting while it disconnects from the current connection">
+    </testcase>
+    <testcase name="Connection Controller Test Suite &quot;connect()&quot; should fire a CONNECTIONS_DID_CHANGE event" time="0.476" classname="&quot;connect()&quot; should fire a CONNECTIONS_DID_CHANGE event">
+    </testcase>
+    <testcase name="Connection Controller Test Suite &quot;connect()&quot; then &quot;disconnect()&quot; should fire the connections did change event 3 times" time="0.515" classname="&quot;connect()&quot; then &quot;disconnect()&quot; should fire the connections did change event 3 times">
+    </testcase>
+    <testcase name="Connection Controller Test Suite when there are no existing connections in the store and the connection controller loads connections" time="0.000" classname="when there are no existing connections in the store and the connection controller loads connections">
+    </testcase>
+    <testcase name="Connection Controller Test Suite the connection model loads both global and workspace stored connection models" time="1.399" classname="the connection model loads both global and workspace stored connection models">
+    </testcase>
+    <testcase name="Connection Controller Test Suite when a connection is added it is saved to the global storage" time="0.327" classname="when a connection is added it is saved to the global storage">
+    </testcase>
+    <testcase name="Connection Controller Test Suite when a connection is added it is saved to the workspace store" time="0.212" classname="when a connection is added it is saved to the workspace store">
+    </testcase>
+    <testcase name="Connection Controller Test Suite a connection can be connected to by id" time="0.032" classname="a connection can be connected to by id">
+    </testcase>
+    <testcase name="Connection Controller Test Suite a saved connection can be loaded and connected to workspace store" time="0.288" classname="a saved connection can be loaded and connected to workspace store">
+    </testcase>
+    <testcase name="Connection Controller Test Suite &quot;copyConnectionStringByConnectionId&quot; returns the driver uri of a connection" time="0.018" classname="&quot;copyConnectionStringByConnectionId&quot; returns the driver uri of a connection">
+    </testcase>
+    <testcase name="Connection Controller Test Suite when a connection is added and the user has set it to not save on default it is not saved" time="0.352" classname="when a connection is added and the user has set it to not save on default it is not saved">
+    </testcase>
+    <testcase name="Connection Controller Test Suite when a connection is removed it is also removed from workspace store" time="0.241" classname="when a connection is removed it is also removed from workspace store">
+    </testcase>
+    <testcase name="Connection Controller Test Suite when a connection is removed it is also removed from global storage" time="0.200" classname="when a connection is removed it is also removed from global storage">
+    </testcase>
+    <testcase name="Connection Controller Test Suite a saved to workspace connection can be renamed and loaded" time="0.223" classname="a saved to workspace connection can be renamed and loaded">
+    </testcase>
+    <testcase name="Connection Controller Test Suite ConnectionQuickPicks workspace connections list is displayed in the alphanumerical case insensitive order" time="0.471" classname="ConnectionQuickPicks workspace connections list is displayed in the alphanumerical case insensitive order">
+    </testcase>
+    <testcase name="Connection Controller Test Suite two disconnects on one connection at once" time="0.395" classname="two disconnects on one connection at once">
+    </testcase>
+    <testcase name="Connection Controller Test Suite a connection which fails can be removed while it is being connected to" time="0.004" classname="a connection which fails can be removed while it is being connected to">
+    </testcase>
+    <testcase name="Connection Controller Test Suite a successfully connecting connection can be removed while it is being connected to" time="0.262" classname="a successfully connecting connection can be removed while it is being connected to">
+    </testcase>
+    <testcase name="Connection Controller Test Suite _migratePreviouslySavedConnection converts an old previously saved connection model without secrets to a new connection info format" time="0.007" classname="_migratePreviouslySavedConnection converts an old previously saved connection model without secrets to a new connection info format">
+    </testcase>
+    <testcase name="Connection Controller Test Suite _migratePreviouslySavedConnection converts an old previously saved connection model with secrets to a new connection info format" time="0.006" classname="_migratePreviouslySavedConnection converts an old previously saved connection model with secrets to a new connection info format">
+    </testcase>
+    <testcase name="Connection Controller Test Suite _migratePreviouslySavedConnection does not store secrets to disc" time="0.005" classname="_migratePreviouslySavedConnection does not store secrets to disc">
+    </testcase>
+    <testcase name="Connection Controller Test Suite _getConnectionInfoWithSecrets runs a migration for old connections" time="0.000" classname="_getConnectionInfoWithSecrets runs a migration for old connections">
+    </testcase>
+    <testcase name="Connection Controller Test Suite _getConnectionInfoWithSecrets does not run a migration for new connections" time="0.003" classname="_getConnectionInfoWithSecrets does not run a migration for new connections">
+    </testcase>
+    <testcase name="Connection Controller Test Suite addNewConnectionStringAndConnect saves connection without secrets to the global storage" time="0.045" classname="addNewConnectionStringAndConnect saves connection without secrets to the global storage">
+    </testcase>
+    <testcase name="Connection Controller Test Suite parseNewConnection converts a connection model to a connaction info and overrides a default appname" time="0.003" classname="parseNewConnection converts a connection model to a connaction info and overrides a default appname">
+    </testcase>
+    <testcase name="Connection Controller Test Suite getMongoClientConnectionOptions returns url and options properties" time="0.013" classname="getMongoClientConnectionOptions returns url and options properties">
+    </testcase>
+    <testcase name="Connection Controller Test Suite _getConnectionStringWithProxy returns string with proxy options" time="0.001" classname="_getConnectionStringWithProxy returns string with proxy options">
+    </testcase>
+  </testsuite>
+  <testsuite name="connecting to a new connection when already connecting" timestamp="2023-03-31T07:11:10" tests="3" file="/home/runner/work/vscode/vscode/out/test/suite/connectionController.test.js" time="2.158" failures="0">
+    <testcase name="Connection Controller Test Suite connecting to a new connection when already connecting connects to the new connection" time="1.069" classname="connects to the new connection">
+    </testcase>
+    <testcase name="Connection Controller Test Suite connecting to a new connection when already connecting updates the connecting version on each new connection attempt" time="0.046" classname="updates the connecting version on each new connection attempt">
+    </testcase>
+    <testcase name="Connection Controller Test Suite connecting to a new connection when already connecting it only connects to the most recent connection attempt" time="1.003" classname="it only connects to the most recent connection attempt">
+    </testcase>
+  </testsuite>
+  <testsuite name="Active Connection CodeLens Provider Test Suite" timestamp="2023-03-31T07:11:12" tests="0" file="/home/runner/work/vscode/vscode/out/test/suite/editors/activeConnectionCodeLensProvider.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="the MongoDB playground in JS" timestamp="2023-03-31T07:11:12" tests="0" file="/home/runner/work/vscode/vscode/out/test/suite/editors/activeConnectionCodeLensProvider.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="user is not connected" timestamp="2023-03-31T07:11:12" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/editors/activeConnectionCodeLensProvider.test.js" time="0.003" failures="0">
+    <testcase name="Active Connection CodeLens Provider Test Suite the MongoDB playground in JS user is not connected show disconnected message in code lenses" time="0.001" classname="show disconnected message in code lenses">
+    </testcase>
+  </testsuite>
+  <testsuite name="user is connected" timestamp="2023-03-31T07:11:12" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/editors/activeConnectionCodeLensProvider.test.js" time="0.001" failures="0">
+    <testcase name="Active Connection CodeLens Provider Test Suite the MongoDB playground in JS user is connected show active connection in code lenses" time="0.001" classname="show active connection in code lenses">
+    </testcase>
+  </testsuite>
+  <testsuite name="the regular JS file" timestamp="2023-03-31T07:11:12" tests="0" file="/home/runner/work/vscode/vscode/out/test/suite/editors/activeConnectionCodeLensProvider.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="user is not connected" timestamp="2023-03-31T07:11:12" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/editors/activeConnectionCodeLensProvider.test.js" time="0.001" failures="0">
+    <testcase name="Active Connection CodeLens Provider Test Suite the regular JS file user is not connected show not show the active connection code lenses" time="0.000" classname="show not show the active connection code lenses">
+    </testcase>
+  </testsuite>
+  <testsuite name="user is connected" timestamp="2023-03-31T07:11:12" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/editors/activeConnectionCodeLensProvider.test.js" time="0.001" failures="0">
+    <testcase name="Active Connection CodeLens Provider Test Suite the regular JS file user is connected show not show the active connection code lensess" time="0.001" classname="show not show the active connection code lensess">
+    </testcase>
+  </testsuite>
+  <testsuite name="Collection Documents Provider Test Suite" timestamp="2023-03-31T07:11:12" tests="2" file="/home/runner/work/vscode/vscode/out/test/suite/editors/collectionDocumentsCodeLensProvider.test.js" time="0.002" failures="0">
+    <testcase name="Collection Documents Provider Test Suite expected provideCodeLenses to return a code lens with positions at the end of the document" time="0.001" classname="expected provideCodeLenses to return a code lens with positions at the end of the document">
+    </testcase>
+    <testcase name="Collection Documents Provider Test Suite expected provideCodeLenses to not return a code lens when there are no more documents to show" time="0.001" classname="expected provideCodeLenses to not return a code lens when there are no more documents to show">
+    </testcase>
+  </testsuite>
+  <testsuite name="Collection Documents Operations Store Test Suite" timestamp="2023-03-31T07:11:12" tests="2" file="/home/runner/work/vscode/vscode/out/test/suite/editors/collectionDocumentsOperationsStore.test.js" time="0.001" failures="0">
+    <testcase name="Collection Documents Operations Store Test Suite expected CollectionDocumentsOperationsStore createNewOperation to add an operation with a document limit and return an id" time="0.000" classname="expected CollectionDocumentsOperationsStore createNewOperation to add an operation with a document limit and return an id">
+    </testcase>
+    <testcase name="Collection Documents Operations Store Test Suite expected increaseOperationDocumentLimit createNewOperation to increase limit by config setting" time="0.000" classname="expected increaseOperationDocumentLimit createNewOperation to increase limit by config setting">
+    </testcase>
+  </testsuite>
+  <testsuite name="Collection Documents Provider Test Suite" timestamp="2023-03-31T07:11:12" tests="6" file="/home/runner/work/vscode/vscode/out/test/suite/editors/collectionDocumentsProvider.test.js" time="0.088" failures="0">
+    <testcase name="Collection Documents Provider Test Suite provideTextDocumentContent parses uri and return documents in the form of a string from a find call" time="0.002" classname="provideTextDocumentContent parses uri and return documents in the form of a string from a find call">
+    </testcase>
+    <testcase name="Collection Documents Provider Test Suite provideTextDocumentContent returns a ejson.stringify string" time="0.001" classname="provideTextDocumentContent returns a ejson.stringify string">
+    </testcase>
+    <testcase name="Collection Documents Provider Test Suite provideTextDocumentContent sets hasMoreDocumentsToShow to false when there arent more documents" time="0.001" classname="provideTextDocumentContent sets hasMoreDocumentsToShow to false when there arent more documents">
+    </testcase>
+    <testcase name="Collection Documents Provider Test Suite provideTextDocumentContent shows a status bar item while it is running then hide it" time="0.000" classname="provideTextDocumentContent shows a status bar item while it is running then hide it">
+    </testcase>
+    <testcase name="Collection Documents Provider Test Suite provideTextDocumentContent sets different code lenses for different namespaces from the same connection" time="0.001" classname="provideTextDocumentContent sets different code lenses for different namespaces from the same connection">
+    </testcase>
+    <testcase name="Collection Documents Provider Test Suite provideTextDocumentContent sets different code lenses for identical namespaces from the different connections" time="0.049" classname="provideTextDocumentContent sets different code lenses for identical namespaces from the different connections">
+    </testcase>
+  </testsuite>
+  <testsuite name="Edit Document Code Lens Provider Test Suite" timestamp="2023-03-31T07:11:12" tests="3" file="/home/runner/work/vscode/vscode/out/test/suite/editors/editDocumentCodeLensProvider.test.js" time="0.000" failures="0">
+    <testcase name="Edit Document Code Lens Provider Test Suite provideCodeLenses returns an empty array if codeLensesInfo is empty" time="0.000" classname="provideCodeLenses returns an empty array if codeLensesInfo is empty">
+    </testcase>
+    <testcase name="Edit Document Code Lens Provider Test Suite the _updateCodeLensesForCursor function deserialize document id" time="0.001" classname="the _updateCodeLensesForCursor function deserialize document id">
+    </testcase>
+    <testcase name="Edit Document Code Lens Provider Test Suite the _updateCodeLensesForDocument function deserialize document id" time="0.000" classname="the _updateCodeLensesForDocument function deserialize document id">
+    </testcase>
+  </testsuite>
+  <testsuite name="after updateCodeLensesForPlayground" timestamp="2023-03-31T07:11:12" tests="3" file="/home/runner/work/vscode/vscode/out/test/suite/editors/editDocumentCodeLensProvider.test.js" time="0.004" failures="0">
+    <testcase name="Edit Document Code Lens Provider Test Suite after updateCodeLensesForPlayground provideCodeLenses returns one code lens when result is a single document" time="0.001" classname="provideCodeLenses returns one code lens when result is a single document">
+    </testcase>
+    <testcase name="Edit Document Code Lens Provider Test Suite after updateCodeLensesForPlayground provideCodeLenses returns two code lenses when result is array of two documents" time="0.001" classname="provideCodeLenses returns two code lenses when result is array of two documents">
+    </testcase>
+    <testcase name="Edit Document Code Lens Provider Test Suite after updateCodeLensesForPlayground provideCodeLenses returns code lenses when result is ejson array" time="0.001" classname="provideCodeLenses returns code lenses when result is ejson array">
+    </testcase>
+  </testsuite>
+  <testsuite name="Editors Controller Test Suite" timestamp="2023-03-31T07:11:12" tests="8" file="/home/runner/work/vscode/vscode/out/test/suite/editors/editorsController.test.js" time="0.000" failures="0">
+    <testcase name="Editors Controller Test Suite getViewCollectionDocumentsUri builds a uri from the namespace and connection info" time="0.000" classname="getViewCollectionDocumentsUri builds a uri from the namespace and connection info">
+    </testcase>
+    <testcase name="Editors Controller Test Suite getViewCollectionDocumentsUri handles / \ and % in the namespace" time="0.000" classname="getViewCollectionDocumentsUri handles / \ and % in the namespace">
+    </testcase>
+    <testcase name="Editors Controller Test Suite saveMongoDBDocument returns false if there is no active editor" time="0.108" classname="saveMongoDBDocument returns false if there is no active editor">
+    </testcase>
+    <testcase name="Editors Controller Test Suite saveMongoDBDocument returns false if this is not a mongodb document" time="0.001" classname="saveMongoDBDocument returns false if this is not a mongodb document">
+    </testcase>
+    <testcase name="Editors Controller Test Suite saveMongoDBDocument returns false if this is not a mongodb document and namespace is missing" time="0.000" classname="saveMongoDBDocument returns false if this is not a mongodb document and namespace is missing">
+    </testcase>
+    <testcase name="Editors Controller Test Suite saveMongoDBDocument returns false if this is not a mongodb document and connectionId is missing" time="0.000" classname="saveMongoDBDocument returns false if this is not a mongodb document and connectionId is missing">
+    </testcase>
+    <testcase name="Editors Controller Test Suite saveMongoDBDocument returns false if this is not a mongodb document and documentId is missing" time="0.001" classname="saveMongoDBDocument returns false if this is not a mongodb document and documentId is missing">
+    </testcase>
+    <testcase name="Editors Controller Test Suite saveMongoDBDocument returns false if a user saves an invalid javascript value" time="0.001" classname="saveMongoDBDocument returns false if a user saves an invalid javascript value">
+    </testcase>
+  </testsuite>
+  <testsuite name="#getFileDisplayNameForDocumentId" timestamp="2023-03-31T07:11:12" tests="4" file="/home/runner/work/vscode/vscode/out/test/suite/editors/editorsController.test.js" time="0.010" failures="0">
+    <testcase name="Editors Controller Test Suite #getFileDisplayNameForDocumentId it strips special characters from the document id" time="0.001" classname="it strips special characters from the document id">
+    </testcase>
+    <testcase name="Editors Controller Test Suite #getFileDisplayNameForDocumentId it trims the string to 200 characters" time="0.000" classname="it trims the string to 200 characters">
+    </testcase>
+    <testcase name="Editors Controller Test Suite #getFileDisplayNameForDocumentId it handles ids that are objects" time="0.001" classname="it handles ids that are objects">
+    </testcase>
+    <testcase name="Editors Controller Test Suite #getFileDisplayNameForDocumentId has the namespace at the start of the display name" time="0.000" classname="has the namespace at the start of the display name">
+    </testcase>
+  </testsuite>
+  <testsuite name="Export To Language Code Lens Provider Test Suite" timestamp="2023-03-31T07:11:12" tests="10" file="/home/runner/work/vscode/vscode/out/test/suite/editors/exportToLanguageCodeLensProvider.test.js" time="0.012" failures="0">
+    <testcase name="Export To Language Code Lens Provider Test Suite has the include import statements code lens when importStatements is false" time="0.001" classname="has the include import statements code lens when importStatements is false">
+    </testcase>
+    <testcase name="Export To Language Code Lens Provider Test Suite has the exclude import statements code lens when importStatements is true" time="0.000" classname="has the exclude import statements code lens when importStatements is true">
+    </testcase>
+    <testcase name="Export To Language Code Lens Provider Test Suite has the include import statements code lens when driverSyntax is false" time="0.000" classname="has the include import statements code lens when driverSyntax is false">
+    </testcase>
+    <testcase name="Export To Language Code Lens Provider Test Suite has the exclude import statements code lens when driverSyntax is true" time="0.001" classname="has the exclude import statements code lens when driverSyntax is true">
+    </testcase>
+    <testcase name="Export To Language Code Lens Provider Test Suite has the use builders code lens when builders is false, language is java, and mode is query" time="0.000" classname="has the use builders code lens when builders is false, language is java, and mode is query">
+    </testcase>
+    <testcase name="Export To Language Code Lens Provider Test Suite does not have the include driver syntax code lens when language is csharp" time="0.000" classname="does not have the include driver syntax code lens when language is csharp">
+    </testcase>
+    <testcase name="Export To Language Code Lens Provider Test Suite has the use raw query code lens when builders is true, language is java, and mode is query" time="0.000" classname="has the use raw query code lens when builders is true, language is java, and mode is query">
+    </testcase>
+    <testcase name="Export To Language Code Lens Provider Test Suite does not have the use raw query code lens when builders is true, language is java, and mode is plain text" time="0.000" classname="does not have the use raw query code lens when builders is true, language is java, and mode is plain text">
+    </testcase>
+    <testcase name="Export To Language Code Lens Provider Test Suite does not render code lenses for json text" time="0.000" classname="does not render code lenses for json text">
+    </testcase>
+    <testcase name="Export To Language Code Lens Provider Test Suite does not render code lenses for plain text text" time="0.000" classname="does not render code lenses for plain text text">
+    </testcase>
+  </testsuite>
+  <testsuite name="MongoDB Document Service Test Suite" timestamp="2023-03-31T07:11:12" tests="5" file="/home/runner/work/vscode/vscode/out/test/suite/editors/mongoDBDocumentService.test.js" time="0.010" failures="0">
+    <testcase name="MongoDB Document Service Test Suite replaceDocument calls findOneAndReplace and saves a document when connected" time="0.002" classname="replaceDocument calls findOneAndReplace and saves a document when connected">
+    </testcase>
+    <testcase name="MongoDB Document Service Test Suite fetchDocument calls find and returns a single document when connected" time="0.001" classname="fetchDocument calls find and returns a single document when connected">
+    </testcase>
+    <testcase name="MongoDB Document Service Test Suite if a user is not connected, documents won&apos;t be saved to MongoDB" time="0.001" classname="if a user is not connected, documents won&apos;t be saved to MongoDB">
+    </testcase>
+    <testcase name="MongoDB Document Service Test Suite if a user switched the active connection, document opened from the previous connection can&apos;t be saved" time="0.000" classname="if a user switched the active connection, document opened from the previous connection can&apos;t be saved">
+    </testcase>
+    <testcase name="MongoDB Document Service Test Suite if a user switched the active connection, document can&apos;t be opened from the old playground results" time="0.001" classname="if a user switched the active connection, document can&apos;t be opened from the old playground results">
+    </testcase>
+  </testsuite>
+  <testsuite name="Playground Controller Test Suite" timestamp="2023-03-31T07:11:12" tests="0" file="/home/runner/work/vscode/vscode/out/test/suite/editors/playgroundController.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="passing connection details to service provider" timestamp="2023-03-31T07:11:12" tests="2" file="/home/runner/work/vscode/vscode/out/test/suite/editors/playgroundController.test.js" time="0.006" failures="0">
+    <testcase name="Playground Controller Test Suite passing connection details to service provider it should pass the active connection id to the language server for connecting" time="0.000" classname="it should pass the active connection id to the language server for connecting">
+    </testcase>
+    <testcase name="Playground Controller Test Suite passing connection details to service provider it should pass ssl strings to the language server for connecting" time="0.001" classname="it should pass ssl strings to the language server for connecting">
+    </testcase>
+  </testsuite>
+  <testsuite name="playground is not open" timestamp="2023-03-31T07:11:12" tests="3" file="/home/runner/work/vscode/vscode/out/test/suite/editors/playgroundController.test.js" time="0.004" failures="0">
+    <testcase name="Playground Controller Test Suite playground is not open run all playground tells to open a playground file" time="0.000" classname="run all playground tells to open a playground file">
+    </testcase>
+    <testcase name="Playground Controller Test Suite playground is not open run selected playground blocks tells to select one or more lines in the playground" time="0.001" classname="run selected playground blocks tells to select one or more lines in the playground">
+    </testcase>
+    <testcase name="Playground Controller Test Suite playground is not open run all or selected playground blocks tells to select one or more lines in the playground" time="0.001" classname="run all or selected playground blocks tells to select one or more lines in the playground">
+    </testcase>
+  </testsuite>
+  <testsuite name="playground is open" timestamp="2023-03-31T07:11:12" tests="0" file="/home/runner/work/vscode/vscode/out/test/suite/editors/playgroundController.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="user is not connected" timestamp="2023-03-31T07:11:12" tests="3" file="/home/runner/work/vscode/vscode/out/test/suite/editors/playgroundController.test.js" time="0.009" failures="0">
+    <testcase name="Playground Controller Test Suite playground is open user is not connected run all playground blocks shows please connect to a database error" time="0.001" classname="run all playground blocks shows please connect to a database error">
+    </testcase>
+    <testcase name="Playground Controller Test Suite playground is open user is not connected run selected playground blocks shows please connect to a database error" time="0.000" classname="run selected playground blocks shows please connect to a database error">
+    </testcase>
+    <testcase name="Playground Controller Test Suite playground is open user is not connected run all or selected playground blocks shows please connect to a database error" time="0.000" classname="run all or selected playground blocks shows please connect to a database error">
+    </testcase>
+  </testsuite>
+  <testsuite name="user is connected" timestamp="2023-03-31T07:11:12" tests="5" file="/home/runner/work/vscode/vscode/out/test/suite/editors/playgroundController.test.js" time="0.158" failures="0">
+    <testcase name="Playground Controller Test Suite playground is open user is connected keep a playground in focus after running it" time="0.000" classname="keep a playground in focus after running it">
+    </testcase>
+    <testcase name="Playground Controller Test Suite playground is open user is connected close cancelation modal when a playground is canceled" time="0.011" classname="close cancelation modal when a playground is canceled">
+    </testcase>
+    <testcase name="Playground Controller Test Suite playground is open user is connected it shows an error message and restarts, and connects the language server when an error occurs in evaluate (out of memory can cause this)" time="0.002" classname="it shows an error message and restarts, and connects the language server when an error occurs in evaluate (out of memory can cause this)">
+    </testcase>
+    <testcase name="Playground Controller Test Suite playground is open user is connected playground controller loads the active editor on start" time="0.000" classname="playground controller loads the active editor on start">
+    </testcase>
+    <testcase name="Playground Controller Test Suite playground is open user is connected exportToLanguage thrown an error for invalid syntax" time="0.128" classname="exportToLanguage thrown an error for invalid syntax">
+    </testcase>
+  </testsuite>
+  <testsuite name="confirmation modal" timestamp="2023-03-31T07:11:12" tests="3" file="/home/runner/work/vscode/vscode/out/test/suite/editors/playgroundController.test.js" time="0.136" failures="0">
+    <testcase name="Playground Controller Test Suite confirmation modal show a confirmation message if mdb.confirmRunAll is true" time="0.001" classname="show a confirmation message if mdb.confirmRunAll is true">
+    </testcase>
+    <testcase name="Playground Controller Test Suite confirmation modal do not show a confirmation message if mdb.confirmRunAll is false" time="0.049" classname="do not show a confirmation message if mdb.confirmRunAll is false">
+    </testcase>
+    <testcase name="Playground Controller Test Suite confirmation modal do not run a playground if user selected No in the confirmation message" time="0.072" classname="do not run a playground if user selected No in the confirmation message">
+    </testcase>
+  </testsuite>
+  <testsuite name="Playground Result Provider Test Suite" timestamp="2023-03-31T07:11:13" tests="12" file="/home/runner/work/vscode/vscode/out/test/suite/editors/playgroundResultProvider.test.js" time="0.026" failures="0">
+    <testcase name="Playground Result Provider Test Suite constructor sets default playground result" time="0.001" classname="constructor sets default playground result">
+    </testcase>
+    <testcase name="Playground Result Provider Test Suite setPlaygroundResult refreshes private playground result property" time="0.000" classname="setPlaygroundResult refreshes private playground result property">
+    </testcase>
+    <testcase name="Playground Result Provider Test Suite provideTextDocumentContent returns undefined formatted to string if content is undefined" time="0.000" classname="provideTextDocumentContent returns undefined formatted to string if content is undefined">
+    </testcase>
+    <testcase name="Playground Result Provider Test Suite provideTextDocumentContent returns null formatted to string if content is null" time="0.000" classname="provideTextDocumentContent returns null formatted to string if content is null">
+    </testcase>
+    <testcase name="Playground Result Provider Test Suite provideTextDocumentContent returns number formatted to string if content is number" time="0.000" classname="provideTextDocumentContent returns number formatted to string if content is number">
+    </testcase>
+    <testcase name="Playground Result Provider Test Suite provideTextDocumentContent returns array formatted to string if content is array" time="0.000" classname="provideTextDocumentContent returns array formatted to string if content is array">
+    </testcase>
+    <testcase name="Playground Result Provider Test Suite provideTextDocumentContent returns object formatted to string if content is object" time="0.000" classname="provideTextDocumentContent returns object formatted to string if content is object">
+    </testcase>
+    <testcase name="Playground Result Provider Test Suite provideTextDocumentContent returns boolean formatted to string if content is boolean" time="0.000" classname="provideTextDocumentContent returns boolean formatted to string if content is boolean">
+    </testcase>
+    <testcase name="Playground Result Provider Test Suite provideTextDocumentContent returns string if content is string" time="0.000" classname="provideTextDocumentContent returns string if content is string">
+    </testcase>
+    <testcase name="Playground Result Provider Test Suite provideTextDocumentContent returns Cursor formatted to string if content is string" time="0.001" classname="provideTextDocumentContent returns Cursor formatted to string if content is string">
+    </testcase>
+    <testcase name="Playground Result Provider Test Suite provideTextDocumentContent returns Document formatted to string if content is string" time="0.000" classname="provideTextDocumentContent returns Document formatted to string if content is string">
+    </testcase>
+    <testcase name="Playground Result Provider Test Suite provideTextDocumentContent sets different code lenses for the playground and the collection" time="0.005" classname="provideTextDocumentContent sets different code lenses for the playground and the collection">
+    </testcase>
+  </testsuite>
+  <testsuite name="Playground Selected CodeAction Provider Test Suite" timestamp="2023-03-31T07:11:13" tests="0" file="/home/runner/work/vscode/vscode/out/test/suite/editors/playgroundSelectedCodeActionProvider.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="the MongoDB playground in JS" timestamp="2023-03-31T07:11:13" tests="7" file="/home/runner/work/vscode/vscode/out/test/suite/editors/playgroundSelectedCodeActionProvider.test.js" time="5.966" failures="0">
+    <testcase name="Playground Selected CodeAction Provider Test Suite the MongoDB playground in JS returns undefined when text is not selected" time="0.000" classname="returns undefined when text is not selected">
+    </testcase>
+    <testcase name="Playground Selected CodeAction Provider Test Suite the MongoDB playground in JS returns a run selected playground blocks action" time="0.604" classname="returns a run selected playground blocks action">
+    </testcase>
+    <testcase name="Playground Selected CodeAction Provider Test Suite the MongoDB playground in JS returns an export to java action with whitespaces around objects" time="0.000" classname="returns an export to java action with whitespaces around objects">
+    </testcase>
+    <testcase name="Playground Selected CodeAction Provider Test Suite the MongoDB playground in JS exports to java and includes builders" time="0.022" classname="exports to java and includes builders">
+    </testcase>
+    <testcase name="Playground Selected CodeAction Provider Test Suite the MongoDB playground in JS exports to csharp and includes import statements" time="0.020" classname="exports to csharp and includes import statements">
+    </testcase>
+    <testcase name="Playground Selected CodeAction Provider Test Suite the MongoDB playground in JS exports to python and includes driver syntax" time="0.025" classname="exports to python and includes driver syntax">
+    </testcase>
+    <testcase name="Playground Selected CodeAction Provider Test Suite the MongoDB playground in JS exports to ruby and includes driver syntax" time="0.022" classname="exports to ruby and includes driver syntax">
+    </testcase>
+  </testsuite>
+  <testsuite name="the regular JS file" timestamp="2023-03-31T07:11:19" tests="2" file="/home/runner/work/vscode/vscode/out/test/suite/editors/playgroundSelectedCodeActionProvider.test.js" time="0.007" failures="0">
+    <testcase name="Playground Selected CodeAction Provider Test Suite the regular JS file returns undefined when text is not selected" time="0.000" classname="returns undefined when text is not selected">
+    </testcase>
+    <testcase name="Playground Selected CodeAction Provider Test Suite the regular JS file returns undefined when text is selected" time="0.000" classname="returns undefined when text is selected">
+    </testcase>
+  </testsuite>
+  <testsuite name="CollectionTreeItem Test Suite" timestamp="2023-03-31T07:11:19" tests="5" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/collectionTreeItem.test.js" time="0.012" failures="0">
+    <testcase name="CollectionTreeItem Test Suite its context value should be in the package json" time="0.001" classname="its context value should be in the package json">
+    </testcase>
+    <testcase name="CollectionTreeItem Test Suite when expanded shows a documents folder and schema folder" time="0.001" classname="when expanded shows a documents folder and schema folder">
+    </testcase>
+    <testcase name="CollectionTreeItem Test Suite when expanded it shows the document count in the description of the document list" time="0.000" classname="when expanded it shows the document count in the description of the document list">
+    </testcase>
+    <testcase name="CollectionTreeItem Test Suite a view should show a different icon from a collection" time="0.000" classname="a view should show a different icon from a collection">
+    </testcase>
+    <testcase name="CollectionTreeItem Test Suite a time-series collection should show a different icon from a collection" time="0.000" classname="a time-series collection should show a different icon from a collection">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConnectionTreeItem Test Suite" timestamp="2023-03-31T07:11:19" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/connectionTreeItem.test.js" time="0.000" failures="0">
+    <testcase name="ConnectionTreeItem Test Suite its context value should be in the package json" time="0.000" classname="its context value should be in the package json">
+    </testcase>
+  </testsuite>
+  <testsuite name="#getChildren" timestamp="2023-03-31T07:11:19" tests="2" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/connectionTreeItem.test.js" time="0.007" failures="0">
+    <testcase name="ConnectionTreeItem Test Suite #getChildren returns database tree items with the databases" time="0.003" classname="returns database tree items with the databases">
+    </testcase>
+    <testcase name="ConnectionTreeItem Test Suite #getChildren when listDatabases errors it wraps it in a nice message" time="0.000" classname="when listDatabases errors it wraps it in a nice message">
+    </testcase>
+  </testsuite>
+  <testsuite name="#listDatabases" timestamp="2023-03-31T07:11:19" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/connectionTreeItem.test.js" time="0.002" failures="0">
+    <testcase name="ConnectionTreeItem Test Suite #listDatabases returns a list of database names" time="0.001" classname="returns a list of database names">
+    </testcase>
+  </testsuite>
+  <testsuite name="DatabaseTreeItem Test Suite" timestamp="2023-03-31T07:11:19" tests="5" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/databaseTreeItem.test.js" time="0.000" failures="0">
+    <testcase name="DatabaseTreeItem Test Suite its context value should be in the package json" time="0.000" classname="its context value should be in the package json">
+    </testcase>
+    <testcase name="DatabaseTreeItem Test Suite when not expanded it does not show collections" time="0.000" classname="when not expanded it does not show collections">
+    </testcase>
+    <testcase name="DatabaseTreeItem Test Suite when expanded shows the collections of a database in tree" time="0.000" classname="when expanded shows the collections of a database in tree">
+    </testcase>
+    <testcase name="DatabaseTreeItem Test Suite when expanded and collapsed its collections cache their expanded documents" time="0.002" classname="when expanded and collapsed its collections cache their expanded documents">
+    </testcase>
+    <testcase name="DatabaseTreeItem Test Suite collections are displayed in the alphanumerical case insensitive order, with system collections last" time="0.000" classname="collections are displayed in the alphanumerical case insensitive order, with system collections last">
+    </testcase>
+  </testsuite>
+  <testsuite name="Live Database Tests" timestamp="2023-03-31T07:11:19" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/databaseTreeItem.test.js" time="0.043" failures="0">
+    <testcase name="DatabaseTreeItem Test Suite Live Database Tests schema is cached when a database is collapsed and expanded" time="0.030" classname="schema is cached when a database is collapsed and expanded">
+    </testcase>
+  </testsuite>
+  <testsuite name="DocumentListTreeItem Test Suite" timestamp="2023-03-31T07:11:19" tests="11" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/documentListTreeItem.test.js" time="0.000" failures="0">
+    <testcase name="DocumentListTreeItem Test Suite its context value should be in the package json" time="0.001" classname="its context value should be in the package json">
+    </testcase>
+    <testcase name="DocumentListTreeItem Test Suite when the &quot;show more&quot; click handler is called =&gt; it increases the amount of documents to show by 10" time="0.001" classname="when the &quot;show more&quot; click handler is called =&gt; it increases the amount of documents to show by 10">
+    </testcase>
+    <testcase name="DocumentListTreeItem Test Suite a &quot;view&quot; type of document list does not show a dropdown" time="0.000" classname="a &quot;view&quot; type of document list does not show a dropdown">
+    </testcase>
+    <testcase name="DocumentListTreeItem Test Suite when expanded shows the documents of a collection in tree" time="0.001" classname="when expanded shows the documents of a collection in tree">
+    </testcase>
+    <testcase name="DocumentListTreeItem Test Suite it should show a show more item when there are more documents to show" time="0.001" classname="it should show a show more item when there are more documents to show">
+    </testcase>
+    <testcase name="DocumentListTreeItem Test Suite it should show more documents after the show more click handler is called" time="0.000" classname="it should show more documents after the show more click handler is called">
+    </testcase>
+    <testcase name="DocumentListTreeItem Test Suite it should not show a show more item when there not are more documents to show" time="0.000" classname="it should not show a show more item when there not are more documents to show">
+    </testcase>
+    <testcase name="DocumentListTreeItem Test Suite when expanded it updates the count of documents" time="0.001" classname="when expanded it updates the count of documents">
+    </testcase>
+    <testcase name="DocumentListTreeItem Test Suite it shows a documents icon" time="0.000" classname="it shows a documents icon">
+    </testcase>
+    <testcase name="DocumentListTreeItem Test Suite it shows the document count in the description" time="0.001" classname="it shows the document count in the description">
+    </testcase>
+    <testcase name="DocumentListTreeItem Test Suite the tooltip shows the unformated document count" time="0.001" classname="the tooltip shows the unformated document count">
+    </testcase>
+  </testsuite>
+  <testsuite name="when not expanded" timestamp="2023-03-31T07:11:19" tests="2" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/documentListTreeItem.test.js" time="0.003" failures="0">
+    <testcase name="DocumentListTreeItem Test Suite when not expanded it does not show documents" time="0.000" classname="it does not show documents">
+    </testcase>
+    <testcase name="DocumentListTreeItem Test Suite when not expanded it does not have a document count in the description" time="0.001" classname="it does not have a document count in the description">
+    </testcase>
+  </testsuite>
+  <testsuite name="formatDocCount" timestamp="2023-03-31T07:11:19" tests="2" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/documentListTreeItem.test.js" time="0.003" failures="0">
+    <testcase name="DocumentListTreeItem Test Suite formatDocCount It formats the document count when the count is 0" time="0.000" classname="It formats the document count when the count is 0">
+    </testcase>
+    <testcase name="DocumentListTreeItem Test Suite formatDocCount It formats the document count when the count is 10009" time="0.001" classname="It formats the document count when the count is 10009">
+    </testcase>
+  </testsuite>
+  <testsuite name="DocumentTreeItem Test Suite" timestamp="2023-03-31T07:11:19" tests="3" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/documentTreeItem.test.js" time="0.005" failures="0">
+    <testcase name="DocumentTreeItem Test Suite it makes the document _id the label of the document tree item" time="0.000" classname="it makes the document _id the label of the document tree item">
+    </testcase>
+    <testcase name="DocumentTreeItem Test Suite when the document has an object _id, it is stringified into the tree item label" time="0.000" classname="when the document has an object _id, it is stringified into the tree item label">
+    </testcase>
+    <testcase name="DocumentTreeItem Test Suite when the document does not have an _id, its label is the supplied index" time="0.000" classname="when the document does not have an _id, its label is the supplied index">
+    </testcase>
+  </testsuite>
+  <testsuite name="Explorer Controller Test Suite" timestamp="2023-03-31T07:11:19" tests="8" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/explorerController.test.js" time="2.565" failures="0">
+    <testcase name="Explorer Controller Test Suite it updates the connections to account for a change in the connection controller" time="0.001" classname="it updates the connections to account for a change in the connection controller">
+    </testcase>
+    <testcase name="Explorer Controller Test Suite when a connection is added and connected it is added to the tree" time="0.024" classname="when a connection is added and connected it is added to the tree">
+    </testcase>
+    <testcase name="Explorer Controller Test Suite only the active connection is displayed as connected in the tree" time="0.558" classname="only the active connection is displayed as connected in the tree">
+    </testcase>
+    <testcase name="Explorer Controller Test Suite shows connection names sorted alphabetically in the tree" time="0.017" classname="shows connection names sorted alphabetically in the tree">
+    </testcase>
+    <testcase name="Explorer Controller Test Suite shows the databases of connected connection in tree" time="0.204" classname="shows the databases of connected connection in tree">
+    </testcase>
+    <testcase name="Explorer Controller Test Suite caches the expanded state of databases in the tree when a connection is expanded or collapsed" time="0.098" classname="caches the expanded state of databases in the tree when a connection is expanded or collapsed">
+    </testcase>
+    <testcase name="Explorer Controller Test Suite tree view should be not created by default (shows welcome view)" time="0.000" classname="tree view should be not created by default (shows welcome view)">
+    </testcase>
+    <testcase name="Explorer Controller Test Suite tree view should call create tree view after a &quot;CONNECTIONS_DID_CHANGE&quot; event" time="0.018" classname="tree view should call create tree view after a &quot;CONNECTIONS_DID_CHANGE&quot; event">
+    </testcase>
+  </testsuite>
+  <testsuite name="FieldTreeItem Test Suite" timestamp="2023-03-31T07:11:21" tests="5" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/fieldTreeItem.test.js" time="0.000" failures="0">
+    <testcase name="FieldTreeItem Test Suite its context value should be in the package json" time="0.000" classname="its context value should be in the package json">
+    </testcase>
+    <testcase name="FieldTreeItem Test Suite it should have a different icon depending on the field type" time="0.000" classname="it should have a different icon depending on the field type">
+    </testcase>
+    <testcase name="FieldTreeItem Test Suite getIconFileNameForField should return &quot;mixed-type&quot; for a polymorphic type field" time="0.000" classname="getIconFileNameForField should return &quot;mixed-type&quot; for a polymorphic type field">
+    </testcase>
+    <testcase name="FieldTreeItem Test Suite getIconFileNameForField should return &quot;mixed-type&quot; for a field without 1 probability" time="0.000" classname="getIconFileNameForField should return &quot;mixed-type&quot; for a field without 1 probability">
+    </testcase>
+    <testcase name="FieldTreeItem Test Suite it should have the fieldtype in the tooltip" time="0.000" classname="it should have the fieldtype in the tooltip">
+    </testcase>
+  </testsuite>
+  <testsuite name="Full database tests" timestamp="2023-03-31T07:11:21" tests="4" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/fieldTreeItem.test.js" time="0.217" failures="0">
+    <testcase name="FieldTreeItem Test Suite Full database tests field name is pulled from the name of a field" time="0.010" classname="field name is pulled from the name of a field">
+    </testcase>
+    <testcase name="FieldTreeItem Test Suite Full database tests it shows dropdowns for nested subdocuments" time="0.008" classname="it shows dropdowns for nested subdocuments">
+    </testcase>
+    <testcase name="FieldTreeItem Test Suite Full database tests it shows dropdowns for arrays" time="0.009" classname="it shows dropdowns for arrays">
+    </testcase>
+    <testcase name="FieldTreeItem Test Suite Full database tests it shows dropdowns and fields for document fields in arrays" time="0.009" classname="it shows dropdowns and fields for document fields in arrays">
+    </testcase>
+  </testsuite>
+  <testsuite name="Help Explorer Test Suite" timestamp="2023-03-31T07:11:21" tests="6" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/helpExplorer.test.js" time="0.017" failures="0">
+    <testcase name="Help Explorer Test Suite tree view should be not created until it is activated" time="0.000" classname="tree view should be not created until it is activated">
+    </testcase>
+    <testcase name="Help Explorer Test Suite the tree should have 5 help tree items" time="0.000" classname="the tree should have 5 help tree items">
+    </testcase>
+    <testcase name="Help Explorer Test Suite the tree should have an atlas item with a url and atlas icon" time="0.002" classname="the tree should have an atlas item with a url and atlas icon">
+    </testcase>
+    <testcase name="Help Explorer Test Suite when a help item that does not require a redirect is clicked on it should open the url with vscode" time="0.001" classname="when a help item that does not require a redirect is clicked on it should open the url with vscode">
+    </testcase>
+    <testcase name="Help Explorer Test Suite when a help item that requires a redirect is clicked on it should open the url with the link helper" time="0.001" classname="when a help item that requires a redirect is clicked on it should open the url with the link helper">
+    </testcase>
+    <testcase name="Help Explorer Test Suite when a help item is clicked on it should have a telemetry trackLinkClicked event" time="0.002" classname="when a help item is clicked on it should have a telemetry trackLinkClicked event">
+    </testcase>
+  </testsuite>
+  <testsuite name="IndexListTreeItem Test Suite" timestamp="2023-03-31T07:11:21" tests="5" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/indexListTreeItem.test.js" time="0.020" failures="0">
+    <testcase name="IndexListTreeItem Test Suite its context value should be in the package json" time="0.000" classname="its context value should be in the package json">
+    </testcase>
+    <testcase name="IndexListTreeItem Test Suite when expanded it fetches indexes and shows them" time="0.000" classname="when expanded it fetches indexes and shows them">
+    </testcase>
+    <testcase name="IndexListTreeItem Test Suite it shows an indexes icon" time="0.000" classname="it shows an indexes icon">
+    </testcase>
+    <testcase name="IndexListTreeItem Test Suite when theres an error fetching indexes, the error is thrown in the caller (no timeout)" time="0.003" classname="when theres an error fetching indexes, the error is thrown in the caller (no timeout)">
+    </testcase>
+    <testcase name="IndexListTreeItem Test Suite when rebuilt it maintains the expanded state of the cached indexes" time="0.000" classname="when rebuilt it maintains the expanded state of the cached indexes">
+    </testcase>
+  </testsuite>
+  <testsuite name="IndexTreeItem Test Suite" timestamp="2023-03-31T07:11:21" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/indexTreeItem.test.js" time="0.000" failures="0">
+    <testcase name="IndexTreeItem Test Suite it has tree items for each key in the index" time="0.000" classname="it has tree items for each key in the index">
+    </testcase>
+  </testsuite>
+  <testsuite name="IndexFieldTreeItem" timestamp="2023-03-31T07:11:21" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/indexTreeItem.test.js" time="0.002" failures="0">
+    <testcase name="IndexTreeItem Test Suite IndexFieldTreeItem it has an icon for the index type" time="0.000" classname="it has an icon for the index type">
+    </testcase>
+  </testsuite>
+  <testsuite name="Playgrounds Controller Test Suite" timestamp="2023-03-31T07:11:21" tests="4" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/playgroundsExplorer.test.js" time="0.427" failures="0">
+    <testcase name="Playgrounds Controller Test Suite should show a welcome view if playgrounds list is empty" time="0.027" classname="should show a welcome view if playgrounds list is empty">
+    </testcase>
+    <testcase name="Playgrounds Controller Test Suite should search for playground in the workspace" time="0.059" classname="should search for playground in the workspace">
+    </testcase>
+    <testcase name="Playgrounds Controller Test Suite should exclude folders and files specified in extension settings" time="0.104" classname="should exclude folders and files specified in extension settings">
+    </testcase>
+    <testcase name="Playgrounds Controller Test Suite should fetch new folders and files to exclude after refreshing" time="0.044" classname="should fetch new folders and files to exclude after refreshing">
+    </testcase>
+  </testsuite>
+  <testsuite name="SchemaTreeItem Test Suite" timestamp="2023-03-31T07:11:22" tests="7" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/schemaTreeItem.test.js" time="0.000" failures="0">
+    <testcase name="SchemaTreeItem Test Suite its context value should be in the package json" time="0.000" classname="its context value should be in the package json">
+    </testcase>
+    <testcase name="SchemaTreeItem Test Suite when the &quot;show more&quot; click handler function is called it sets the schema to show more fields" time="0.000" classname="when the &quot;show more&quot; click handler function is called it sets the schema to show more fields">
+    </testcase>
+    <testcase name="SchemaTreeItem Test Suite when there are no documents in the schema it should show a message" time="0.002" classname="when there are no documents in the schema it should show a message">
+    </testcase>
+    <testcase name="SchemaTreeItem Test Suite it should show a show more item when there are more fields to show" time="0.002" classname="it should show a show more item when there are more fields to show">
+    </testcase>
+    <testcase name="SchemaTreeItem Test Suite it should show more fields after the show more click handler is called" time="0.001" classname="it should show more fields after the show more click handler is called">
+    </testcase>
+    <testcase name="SchemaTreeItem Test Suite When schema parsing fails it displays an error message" time="0.000" classname="When schema parsing fails it displays an error message">
+    </testcase>
+    <testcase name="SchemaTreeItem Test Suite it should have an icon with the name schema" time="0.000" classname="it should have an icon with the name schema">
+    </testcase>
+  </testsuite>
+  <testsuite name="Live Database Tests" timestamp="2023-03-31T07:11:22" tests="3" file="/home/runner/work/vscode/vscode/out/test/suite/explorer/schemaTreeItem.test.js" time="0.048" failures="0">
+    <testcase name="SchemaTreeItem Test Suite Live Database Tests when not expanded it has not yet pulled the schema" time="0.009" classname="when not expanded it has not yet pulled the schema">
+    </testcase>
+    <testcase name="SchemaTreeItem Test Suite Live Database Tests when expanded shows the fields of a schema" time="0.008" classname="when expanded shows the fields of a schema">
+    </testcase>
+    <testcase name="SchemaTreeItem Test Suite Live Database Tests it only shows a dropdown for fields which are always documents - and not for polymorphic" time="0.010" classname="it only shows a dropdown for fields which are always documents - and not for polymorphic">
+    </testcase>
+  </testsuite>
+  <testsuite name="Extension Test Suite" timestamp="2023-03-31T07:11:22" tests="2" file="/home/runner/work/vscode/vscode/out/test/suite/extension.test.js" time="0.009" failures="0">
+    <testcase name="Extension Test Suite there should be 3 views registered in the package.json" time="0.000" classname="there should be 3 views registered in the package.json">
+    </testcase>
+    <testcase name="Extension Test Suite commands are registered in vscode" time="0.006" classname="commands are registered in vscode">
+    </testcase>
+  </testsuite>
+  <testsuite name="Language Server Controller Test Suite" timestamp="2023-03-31T07:11:22" tests="2" file="/home/runner/work/vscode/vscode/out/test/suite/language/languageServerController.test.js" time="0.485" failures="0">
+    <testcase name="Language Server Controller Test Suite cancel a long-running script" time="0.001" classname="cancel a long-running script">
+    </testcase>
+    <testcase name="Language Server Controller Test Suite the language server dependency bundle exists" time="0.000" classname="the language server dependency bundle exists">
+    </testcase>
+  </testsuite>
+  <testsuite name="MongoDBService Test Suite" timestamp="2023-03-31T07:11:22" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/language/mongoDBService.test.js" time="0.000" failures="0">
+    <testcase name="MongoDBService Test Suite the language server worker dependency bundle exists" time="0.000" classname="the language server worker dependency bundle exists">
+    </testcase>
+  </testsuite>
+  <testsuite name="Extension path" timestamp="2023-03-31T07:11:22" tests="3" file="/home/runner/work/vscode/vscode/out/test/suite/language/mongoDBService.test.js" time="0.018" failures="0">
+    <testcase name="MongoDBService Test Suite Extension path catches error when evaluate is called and extension path is empty string" time="0.000" classname="catches error when evaluate is called and extension path is empty string">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Extension path catches error when _getCollectionsCompletionItems is called and extension path is empty string" time="0.001" classname="catches error when _getCollectionsCompletionItems is called and extension path is empty string">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Extension path catches error when _getSchemaFields is called and extension path is empty string" time="0.002" classname="catches error when _getSchemaFields is called and extension path is empty string">
+    </testcase>
+  </testsuite>
+  <testsuite name="Connect" timestamp="2023-03-31T07:11:22" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/language/mongoDBService.test.js" time="0.011" failures="0">
+    <testcase name="MongoDBService Test Suite Connect connect and disconnect from cli service provider" time="0.010" classname="connect and disconnect from cli service provider">
+    </testcase>
+  </testsuite>
+  <testsuite name="Complete" timestamp="2023-03-31T07:11:23" tests="76" file="/home/runner/work/vscode/vscode/out/test/suite/language/mongoDBService.test.js" time="0.312" failures="0">
+    <testcase name="MongoDBService Test Suite Complete provide shell collection methods completion if global scope" time="0.009" classname="provide shell collection methods completion if global scope">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide shell collection methods completion if function scope" time="0.004" classname="provide shell collection methods completion if function scope">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide shell collection methods completion for a collection name in a bracket notation" time="0.002" classname="provide shell collection methods completion for a collection name in a bracket notation">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide shell collection methods completion for a collection name in getCollection" time="0.001" classname="provide shell collection methods completion for a collection name in getCollection">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide shell collection methods completion if single quotes" time="0.001" classname="provide shell collection methods completion if single quotes">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide shell db methods completion with dot the same line" time="0.000" classname="provide shell db methods completion with dot the same line">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide shell db methods completion with dot next line" time="0.000" classname="provide shell db methods completion with dot next line">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide shell db methods completion with dot after space" time="0.001" classname="provide shell db methods completion with dot after space">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide shell aggregation cursor methods completion" time="0.001" classname="provide shell aggregation cursor methods completion">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide shell find cursor methods completion without args" time="0.001" classname="provide shell find cursor methods completion without args">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide shell find cursor methods completion with args at the same line" time="0.002" classname="provide shell find cursor methods completion with args at the same line">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide shell find cursor methods completion with args next line" time="0.001" classname="provide shell find cursor methods completion with args next line">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide fields completion in find in dot notation when has db" time="0.003" classname="provide fields completion in find in dot notation when has db">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide fields completion in find in bracket notation when has db" time="0.002" classname="provide fields completion in find in bracket notation when has db">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide fields completion in find if text not formatted" time="0.002" classname="provide fields completion in find if text not formatted">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide fields completion in find if functions are multi-lined" time="0.003" classname="provide fields completion in find if functions are multi-lined">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide fields completion in find if object is multi-lined" time="0.002" classname="provide fields completion in find if object is multi-lined">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide fields completion in find if a key is surrounded by spaces" time="0.003" classname="provide fields completion in find if a key is surrounded by spaces">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide fields completion in find for a proper db" time="0.002" classname="provide fields completion in find for a proper db">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide fields completion in find inside function scope" time="0.002" classname="provide fields completion in find inside function scope">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide fields completion in find for a proper collection" time="0.001" classname="provide fields completion in find for a proper collection">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete do not provide fields completion in find if db not found" time="0.003" classname="do not provide fields completion in find if db not found">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete do not provide fields completionin find outside object property" time="0.001" classname="do not provide fields completionin find outside object property">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide fields completion in aggregate inside the $match stage" time="0.003" classname="provide fields completion in aggregate inside the $match stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide stages completion in aggregate when has db" time="0.002" classname="provide stages completion in aggregate when has db">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide stages completion in aggregate if db not found" time="0.001" classname="provide stages completion in aggregate if db not found">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide stages completion in find if object is multi-lined" time="0.001" classname="provide stages completion in find if object is multi-lined">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide query completion for the $match stage" time="0.002" classname="provide query completion for the $match stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide query completion in find" time="0.002" classname="provide query completion in find">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete do not provide query completion for other than $match stages" time="0.003" classname="do not provide query completion for other than $match stages">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide bson completion in find" time="0.002" classname="provide bson completion in find">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide bson completion in aggregate" time="0.004" classname="provide bson completion in aggregate">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide system variable completion in find" time="0.002" classname="provide system variable completion in find">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide system variable completion in aggregate" time="0.002" classname="provide system variable completion in aggregate">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide field reference completion in find when has db" time="0.002" classname="provide field reference completion in find when has db">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete do not provide field reference completion in find if db not found" time="0.002" classname="do not provide field reference completion in find if db not found">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide field reference completion in aggregate when has db" time="0.002" classname="provide field reference completion in aggregate when has db">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide field reference completion in aggregate when collection is specified via getCollection" time="0.001" classname="provide field reference completion in aggregate when collection is specified via getCollection">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide aggregation expression completion for other than $match stages" time="0.001" classname="provide aggregation expression completion for other than $match stages">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete do not provide aggregation expression completion for the $match stage" time="0.001" classname="do not provide aggregation expression completion for the $match stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide aggregation conversion completion for other than $match stages" time="0.002" classname="provide aggregation conversion completion for other than $match stages">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete do not provide aggregation conversion completion for the $match stage" time="0.001" classname="do not provide aggregation conversion completion for the $match stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide aggregation accumulator completion for the $project stage" time="0.001" classname="provide aggregation accumulator completion for the $project stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide aggregation accumulator completion for the $group stage" time="0.001" classname="provide aggregation accumulator completion for the $group stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete do not provide aggregation accumulator completion for the $match stage" time="0.001" classname="do not provide aggregation accumulator completion for the $match stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete do not provide aggregation accumulator completion for the $documents stage" time="0.001" classname="do not provide aggregation accumulator completion for the $documents stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide aggregation accumulator direction completion for the $project stage" time="0.002" classname="provide aggregation accumulator direction completion for the $project stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide aggregation accumulator direction completion for the $group stage" time="0.001" classname="provide aggregation accumulator direction completion for the $group stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete do not provide aggregation accumulator direction completion for the $match stage" time="0.001" classname="do not provide aggregation accumulator direction completion for the $match stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete do not provide aggregation accumulator direction completion for the $documents stage" time="0.007" classname="do not provide aggregation accumulator direction completion for the $documents stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide aggregation accumulator window completion for the $setWindowFields stage" time="0.002" classname="provide aggregation accumulator window completion for the $setWindowFields stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete do not provide aggregation accumulator window completion for the $group stage" time="0.001" classname="do not provide aggregation accumulator window completion for the $group stage">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide db and use identifier completion" time="0.001" classname="provide db and use identifier completion">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide db names completion for literal" time="0.001" classname="provide db names completion for literal">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide db names completion for template start line" time="0.001" classname="provide db names completion for template start line">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide db names completion for template middle line" time="0.000" classname="provide db names completion for template middle line">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide db names completion for template end line" time="0.000" classname="provide db names completion for template end line">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion for valid object names" time="0.000" classname="provide collection names completion for valid object names">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion for object names with dashes" time="0.001" classname="provide collection names completion for object names with dashes">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion in variable declarations" time="0.000" classname="provide collection names completion in variable declarations">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion for db symbol with bracket notation" time="0.001" classname="provide collection names completion for db symbol with bracket notation">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion for getCollection as a simple string" time="0.000" classname="provide collection names completion for getCollection as a simple string">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion for getCollection as a string template" time="0.001" classname="provide collection names completion for getCollection as a string template">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names and shell db symbol completion for db symbol with dot notation" time="0.001" classname="provide collection names and shell db symbol completion for db symbol with dot notation">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide only collection names and shell db symbol completion after find cursor" time="0.001" classname="provide only collection names and shell db symbol completion after find cursor">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide only collection names and shell db symbol completion after aggregate cursor" time="0.001" classname="provide only collection names and shell db symbol completion after aggregate cursor">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide only collection names completion in the middle of expression" time="0.000" classname="provide only collection names completion in the middle of expression">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names with dashes completion in the middle of expression" time="0.001" classname="provide collection names with dashes completion in the middle of expression">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion after single line comment" time="0.001" classname="provide collection names completion after single line comment">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion after single line comment with new line character" time="0.000" classname="provide collection names completion after single line comment with new line character">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion after multi-line comment" time="0.001" classname="provide collection names completion after multi-line comment">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion after end of line comment" time="0.001" classname="provide collection names completion after end of line comment">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion at the same line block comment starts" time="0.000" classname="provide collection names completion at the same line block comment starts">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion at the same line block comment ends" time="0.001" classname="provide collection names completion at the same line block comment ends">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion at the same line with end line comment" time="0.000" classname="provide collection names completion at the same line with end line comment">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Complete provide collection names completion if code without a semicolon" time="0.001" classname="provide collection names completion if code without a semicolon">
+    </testcase>
+  </testsuite>
+  <testsuite name="Evaluate" timestamp="2023-03-31T07:11:23" tests="12" file="/home/runner/work/vscode/vscode/out/test/suite/language/mongoDBService.test.js" time="7.100" failures="0">
+    <testcase name="MongoDBService Test Suite Evaluate evaluate should sum numbers" time="0.581" classname="evaluate should sum numbers">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Evaluate should not run when the connectionId does not match" time="0.000" classname="should not run when the connectionId does not match">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Evaluate evaluate multiplies commands at once" time="0.585" classname="evaluate multiplies commands at once">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Evaluate create each time a new runtime" time="1.187" classname="create each time a new runtime">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Evaluate evaluate returns valid EJSON" time="0.599" classname="evaluate returns valid EJSON">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Evaluate evaluate returns an object" time="0.588" classname="evaluate returns an object">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Evaluate evaluate returns an array" time="0.587" classname="evaluate returns an array">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Evaluate evaluate returns undefined" time="0.586" classname="evaluate returns undefined">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Evaluate evaluate returns null" time="0.593" classname="evaluate returns null">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Evaluate evaluate returns single line strings" time="0.595" classname="evaluate returns single line strings">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Evaluate evaluate returns multiline strings" time="0.587" classname="evaluate returns multiline strings">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Evaluate includes results from print() and console.log()" time="0.597" classname="includes results from print() and console.log()">
+    </testcase>
+  </testsuite>
+  <testsuite name="Export to language mode" timestamp="2023-03-31T07:11:30" tests="9" file="/home/runner/work/vscode/vscode/out/test/suite/language/mongoDBService.test.js" time="0.010" failures="0">
+    <testcase name="MongoDBService Test Suite Export to language mode returns other for call expression" time="0.003" classname="returns other for call expression">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Export to language mode returns query for an object" time="0.001" classname="returns query for an object">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Export to language mode returns aggregation for an array as function argument" time="0.001" classname="returns aggregation for an array as function argument">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Export to language mode returns query for an object as function argument" time="0.001" classname="returns query for an object as function argument">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Export to language mode returns aggregation for an array assigned to a variable" time="0.000" classname="returns aggregation for an array assigned to a variable">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Export to language mode returns query for an object assigned to a variable" time="0.000" classname="returns query for an object assigned to a variable">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Export to language mode returns other for a variable declaration" time="0.000" classname="returns other for a variable declaration">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Export to language mode returns query for an object used as another object property" time="0.001" classname="returns query for an object used as another object property">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Export to language mode returns aggregation for an array inside another array" time="0.001" classname="returns aggregation for an array inside another array">
+    </testcase>
+  </testsuite>
+  <testsuite name="Diagnostic" timestamp="2023-03-31T07:11:30" tests="22" file="/home/runner/work/vscode/vscode/out/test/suite/language/mongoDBService.test.js" time="0.011" failures="0">
+    <testcase name="MongoDBService Test Suite Diagnostic does not find use diagnostic issue when a line does not start with use" time="0.001" classname="does not find use diagnostic issue when a line does not start with use">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic does not find use diagnostic issue when use in the middle of other command" time="0.000" classname="does not find use diagnostic issue when use in the middle of other command">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic does not find use diagnostic issue when use is followed by a space and curly bracket" time="0.000" classname="does not find use diagnostic issue when use is followed by a space and curly bracket">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic does not find use diagnostic issue when use is followed by a space and point" time="0.000" classname="does not find use diagnostic issue when use is followed by a space and point">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic does not find use diagnostic issue when use is followed by a space and bracket" time="0.000" classname="does not find use diagnostic issue when use is followed by a space and bracket">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds use without database diagnostic issue" time="0.000" classname="finds use without database diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds use with an existing database without quotes diagnostic issue" time="0.000" classname="finds use with an existing database without quotes diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds use with a new database without quotes diagnostic issue" time="0.000" classname="finds use with a new database without quotes diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds use with database and single quotes diagnostic issue" time="0.000" classname="finds use with database and single quotes diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds use with database and double quotes diagnostic issue" time="0.000" classname="finds use with database and double quotes diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds show databases diagnostic issue" time="0.000" classname="finds show databases diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds show dbs diagnostic issue" time="0.000" classname="finds show dbs diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds show collections diagnostic issue" time="0.000" classname="finds show collections diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds show tables diagnostic issue" time="0.000" classname="finds show tables diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds show profile diagnostic issue" time="0.000" classname="finds show profile diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds show users diagnostic issue" time="0.000" classname="finds show users diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds show roles diagnostic issue" time="0.000" classname="finds show roles diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds show logs diagnostic issue" time="0.000" classname="finds show logs diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds show log diagnostic issue" time="0.001" classname="finds show log diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds show log without type diagnostic issue" time="0.000" classname="finds show log without type diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds show log with type and single quotes diagnostic issue" time="0.000" classname="finds show log with type and single quotes diagnostic issue">
+    </testcase>
+    <testcase name="MongoDBService Test Suite Diagnostic finds show log with type and double quotes diagnostic issue" time="0.000" classname="finds show log with type and double quotes diagnostic issue">
+    </testcase>
+  </testsuite>
+  <testsuite name="MDBExtensionController Test Suite" timestamp="2023-03-31T07:11:30" tests="0" file="/home/runner/work/vscode/vscode/out/test/suite/mdbExtensionController.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="when not connected" timestamp="2023-03-31T07:11:30" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/mdbExtensionController.test.js" time="0.002" failures="0">
+    <testcase name="MDBExtensionController Test Suite when not connected mdb.addDatabase command fails when not connected to the connection" time="0.000" classname="mdb.addDatabase command fails when not connected to the connection">
+    </testcase>
+  </testsuite>
+  <testsuite name="when connected" timestamp="2023-03-31T07:11:30" tests="48" file="/home/runner/work/vscode/vscode/out/test/suite/mdbExtensionController.test.js" time="0.000" failures="0">
+    <testcase name="MDBExtensionController Test Suite when connected mdb.viewCollectionDocuments command should call onViewCollectionDocuments on the editor controller with the collection namespace" time="0.001" classname="mdb.viewCollectionDocuments command should call onViewCollectionDocuments on the editor controller with the collection namespace">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.viewCollectionDocuments command should also work with the documents list" time="0.000" classname="mdb.viewCollectionDocuments command should also work with the documents list">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.addConnection command should call openWebview on the webview controller" time="0.001" classname="mdb.addConnection command should call openWebview on the webview controller">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.addConnectionWithURI command should call connectWithURI on the connection controller" time="0.000" classname="mdb.addConnectionWithURI command should call connectWithURI on the connection controller">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.refreshConnection command should reset the cache on a connection tree item" time="0.001" classname="mdb.refreshConnection command should reset the cache on a connection tree item">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.treeItemRemoveConnection command should call removeMongoDBConnection on the connection controller with the tree item connection id" time="0.000" classname="mdb.treeItemRemoveConnection command should call removeMongoDBConnection on the connection controller with the tree item connection id">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.copyConnectionString command should try to copy the driver url to the vscode env clipboard" time="0.002" classname="mdb.copyConnectionString command should try to copy the driver url to the vscode env clipboard">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.copyDatabaseName command should try to copy the database name to the vscode env clipboard" time="0.002" classname="mdb.copyDatabaseName command should try to copy the database name to the vscode env clipboard">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.copyCollectionName command should try to copy the collection name to the vscode env clipboard" time="0.001" classname="mdb.copyCollectionName command should try to copy the collection name to the vscode env clipboard">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.copySchemaFieldName command should try to copy the field name to the vscode env clipboard" time="0.000" classname="mdb.copySchemaFieldName command should try to copy the field name to the vscode env clipboard">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.refreshDatabase command should reset the cache on the database tree item" time="0.001" classname="mdb.refreshDatabase command should reset the cache on the database tree item">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.refreshCollection command should reset the expanded state of its children and call to refresh the explorer controller" time="0.001" classname="mdb.refreshCollection command should reset the expanded state of its children and call to refresh the explorer controller">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.refreshDocumentList command should update the document count and call to refresh the explorer controller" time="0.001" classname="mdb.refreshDocumentList command should update the document count and call to refresh the explorer controller">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.refreshSchema command should reset its cache and call to refresh the explorer controller" time="0.001" classname="mdb.refreshSchema command should reset its cache and call to refresh the explorer controller">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.refreshIndexes command should reset its cache and call to refresh the explorer controller" time="0.001" classname="mdb.refreshIndexes command should reset its cache and call to refresh the explorer controller">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.addDatabase should create a MongoDB playground with create collection template" time="0.001" classname="mdb.addDatabase should create a MongoDB playground with create collection template">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.addCollection should create a MongoDB playground with create collection template" time="0.001" classname="mdb.addCollection should create a MongoDB playground with create collection template">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.searchForDocuments should create a MongoDB playground with search template" time="0.000" classname="mdb.searchForDocuments should create a MongoDB playground with search template">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.createIndexFromTreeView should create a MongoDB playground with index template" time="0.001" classname="mdb.createIndexFromTreeView should create a MongoDB playground with index template">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.createPlayground should create a MongoDB playground with default template" time="0.001" classname="mdb.createPlayground should create a MongoDB playground with default template">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.createPlayground command should create a MongoDB playground without template" time="0.000" classname="mdb.createPlayground command should create a MongoDB playground without template">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.addDatabase command fails when disconnecting" time="0.001" classname="mdb.addDatabase command fails when disconnecting">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.addDatabase command fails when connecting" time="0.001" classname="mdb.addDatabase command fails when connecting">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.addCollection command fails when disconnecting" time="0.000" classname="mdb.addCollection command fails when disconnecting">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.dropCollection calls data service to drop the collection after inputting the collection name" time="0.001" classname="mdb.dropCollection calls data service to drop the collection after inputting the collection name">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.dropCollection fails when a collection doesnt exist" time="0.089" classname="mdb.dropCollection fails when a collection doesnt exist">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.dropCollection fails when the input doesnt match the collection name" time="0.001" classname="mdb.dropCollection fails when the input doesnt match the collection name">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.dropCollection fails when the collection name input is empty" time="0.000" classname="mdb.dropCollection fails when the collection name input is empty">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.dropDatabase calls dataservice to drop the database after inputting the database name" time="0.001" classname="mdb.dropDatabase calls dataservice to drop the database after inputting the database name">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.dropDatabase succeeds even when a database doesnt exist (mdb behavior)" time="0.212" classname="mdb.dropDatabase succeeds even when a database doesnt exist (mdb behavior)">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.dropDatabase fails when the input doesnt match the database name" time="0.001" classname="mdb.dropDatabase fails when the input doesnt match the database name">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.dropDatabase fails when the database name input is empty" time="0.001" classname="mdb.dropDatabase fails when the database name input is empty">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.renameConnection fails when the name input is empty" time="0.001" classname="mdb.renameConnection fails when the name input is empty">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.renameConnection updates the name of a connection" time="0.009" classname="mdb.renameConnection updates the name of a connection">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.openMongoDBDocumentFromTree openes a document from the sidebar and saves it to MongoDB" time="0.011" classname="mdb.openMongoDBDocumentFromTree openes a document from the sidebar and saves it to MongoDB">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.openMongoDBDocumentFromTree openes a document from a tree with a treeview source" time="0.000" classname="mdb.openMongoDBDocumentFromTree openes a document from a tree with a treeview source">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.openMongoDBDocumentFromCodeLens openes a document from a playground results with a playground source" time="0.001" classname="mdb.openMongoDBDocumentFromCodeLens openes a document from a playground results with a playground source">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.saveMongoDBDocument replaces a document with a treeview source" time="0.001" classname="mdb.saveMongoDBDocument replaces a document with a treeview source">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.saveMongoDBDocuments replaces a document with a playground source" time="0.001" classname="mdb.saveMongoDBDocuments replaces a document with a playground source">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.runSelectedPlaygroundBlocks runs selected playgroundB blocks once" time="0.001" classname="mdb.runSelectedPlaygroundBlocks runs selected playgroundB blocks once">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.runAllPlaygroundBlocks runs all playgroundB blocks once" time="0.001" classname="mdb.runAllPlaygroundBlocks runs all playgroundB blocks once">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.changeActiveConnection changes the active connection once" time="0.001" classname="mdb.changeActiveConnection changes the active connection once">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.refreshPlaygroundsFromTreeView refreshes the playgrounds explorer once" time="0.001" classname="mdb.refreshPlaygroundsFromTreeView refreshes the playgrounds explorer once">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.copyDocumentContentsFromTreeView should copy a document&apos;s content to the clipboard" time="0.001" classname="mdb.copyDocumentContentsFromTreeView should copy a document&apos;s content to the clipboard">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.cloneDocumentFromTreeView opens a playground with a document&apos;s content" time="0.001" classname="mdb.cloneDocumentFromTreeView opens a playground with a document&apos;s content">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.insertDocumentFromTreeView opens a playground with an insert document template" time="0.001" classname="mdb.insertDocumentFromTreeView opens a playground with an insert document template">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.deleteDocumentFromTreeView deletes a document when the confirmation is canceled" time="0.000" classname="mdb.deleteDocumentFromTreeView deletes a document when the confirmation is canceled">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected mdb.deleteDocumentFromTreeView deletes a document after confirmation" time="0.001" classname="mdb.deleteDocumentFromTreeView deletes a document after confirmation">
+    </testcase>
+  </testsuite>
+  <testsuite name="with mock execute command" timestamp="2023-03-31T07:11:31" tests="0" file="/home/runner/work/vscode/vscode/out/test/suite/mdbExtensionController.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="when a user hasnt been shown the initial overview page yet and they have no connections saved" timestamp="2023-03-31T07:11:31" tests="2" file="/home/runner/work/vscode/vscode/out/test/suite/mdbExtensionController.test.js" time="0.004" failures="0">
+    <testcase name="MDBExtensionController Test Suite when connected with mock execute command when a user hasnt been shown the initial overview page yet and they have no connections saved they are shown the overview page" time="0.000" classname="they are shown the overview page">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected with mock execute command when a user hasnt been shown the initial overview page yet and they have no connections saved it sets that they&apos;ve been shown the overview page" time="0.000" classname="it sets that they&apos;ve been shown the overview page">
+    </testcase>
+  </testsuite>
+  <testsuite name="when a user hasnt been shown the initial overview page yet and they have connections saved" timestamp="2023-03-31T07:11:31" tests="2" file="/home/runner/work/vscode/vscode/out/test/suite/mdbExtensionController.test.js" time="0.004" failures="0">
+    <testcase name="MDBExtensionController Test Suite when connected with mock execute command when a user hasnt been shown the initial overview page yet and they have connections saved they are not shown the overview page" time="0.000" classname="they are not shown the overview page">
+    </testcase>
+    <testcase name="MDBExtensionController Test Suite when connected with mock execute command when a user hasnt been shown the initial overview page yet and they have connections saved it sets that they&apos;ve been shown the overview page" time="0.000" classname="it sets that they&apos;ve been shown the overview page">
+    </testcase>
+  </testsuite>
+  <testsuite name="when a user has been shown the initial overview page" timestamp="2023-03-31T07:11:31" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/mdbExtensionController.test.js" time="0.002" failures="0">
+    <testcase name="MDBExtensionController Test Suite when connected with mock execute command when a user has been shown the initial overview page they are not shown the overview page" time="0.000" classname="they are not shown the overview page">
+    </testcase>
+  </testsuite>
+  <testsuite name="Playground" timestamp="2023-03-31T07:11:31" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/playground.test.js" time="5.019" failures="0">
+    <testcase name="Playground show mongodb completion items before other js completion" time="4.936" classname="show mongodb completion items before other js completion">
+    </testcase>
+  </testsuite>
+  <testsuite name="Storage Controller Test Suite" timestamp="2023-03-31T07:11:36" tests="7" file="/home/runner/work/vscode/vscode/out/test/suite/storage/storageController.test.js" time="0.000" failures="0">
+    <testcase name="Storage Controller Test Suite getting a variable gets it from the global context store" time="0.000" classname="getting a variable gets it from the global context store">
+    </testcase>
+    <testcase name="Storage Controller Test Suite getting a variable from the workspace state gets it from the workspace context store" time="0.000" classname="getting a variable from the workspace state gets it from the workspace context store">
+    </testcase>
+    <testcase name="Storage Controller Test Suite addNewConnectionToGlobalStore adds the connection to preexisting connections on the global storage" time="0.001" classname="addNewConnectionToGlobalStore adds the connection to preexisting connections on the global storage">
+    </testcase>
+    <testcase name="Storage Controller Test Suite addNewConnectionToWorkspaceStore adds the connection to preexisting connections on the workspace store" time="0.000" classname="addNewConnectionToWorkspaceStore adds the connection to preexisting connections on the workspace store">
+    </testcase>
+    <testcase name="Storage Controller Test Suite when there are saved workspace connections, hasSavedConnections returns true" time="0.000" classname="when there are saved workspace connections, hasSavedConnections returns true">
+    </testcase>
+    <testcase name="Storage Controller Test Suite when there are saved global connections, hasSavedConnections returns true" time="0.000" classname="when there are saved global connections, hasSavedConnections returns true">
+    </testcase>
+    <testcase name="Storage Controller Test Suite when there are no saved connections, hasSavedConnections returns false" time="0.000" classname="when there are no saved connections, hasSavedConnections returns false">
+    </testcase>
+  </testsuite>
+  <testsuite name="for a new user that does not have anonymousId or userId" timestamp="2023-03-31T07:11:36" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/storage/storageController.test.js" time="0.001" failures="0">
+    <testcase name="Storage Controller Test Suite for a new user that does not have anonymousId or userId getUserIdentity adds anonymousId to the global storage and returns it to telemetry" time="0.000" classname="getUserIdentity adds anonymousId to the global storage and returns it to telemetry">
+    </testcase>
+  </testsuite>
+  <testsuite name="for an old user that does not have anonymousId but has userId" timestamp="2023-03-31T07:11:36" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/storage/storageController.test.js" time="0.001" failures="0">
+    <testcase name="Storage Controller Test Suite for an old user that does not have anonymousId but has userId getUserIdentity returns userId from the global storage and returns it to telemetry" time="0.000" classname="getUserIdentity returns userId from the global storage and returns it to telemetry">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConnectionTelemetry Controller Test Suite" timestamp="2023-03-31T07:11:36" tests="0" file="/home/runner/work/vscode/vscode/out/test/suite/telemetry/connectionTelemetry.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="with mock data service" timestamp="2023-03-31T07:11:36" tests="6" file="/home/runner/work/vscode/vscode/out/test/suite/telemetry/connectionTelemetry.test.js" time="0.022" failures="0">
+    <testcase name="ConnectionTelemetry Controller Test Suite with mock data service it returns is_used_connect_screen true when the connection type is form" time="0.001" classname="it returns is_used_connect_screen true when the connection type is form">
+    </testcase>
+    <testcase name="ConnectionTelemetry Controller Test Suite with mock data service it returns is_used_command_palette true when the connection type is string" time="0.001" classname="it returns is_used_command_palette true when the connection type is string">
+    </testcase>
+    <testcase name="ConnectionTelemetry Controller Test Suite with mock data service it returns is_used_saved_connection true when the connection type is id" time="0.001" classname="it returns is_used_saved_connection true when the connection type is id">
+    </testcase>
+    <testcase name="ConnectionTelemetry Controller Test Suite with mock data service it has is_localhost false for a remote connection" time="0.000" classname="it has is_localhost false for a remote connection">
+    </testcase>
+    <testcase name="ConnectionTelemetry Controller Test Suite with mock data service it has a default is atlas false" time="0.000" classname="it has a default is atlas false">
+    </testcase>
+    <testcase name="ConnectionTelemetry Controller Test Suite with mock data service it has a default driver auth mechanism undefined" time="0.000" classname="it has a default driver auth mechanism undefined">
+    </testcase>
+  </testsuite>
+  <testsuite name="with live connection" timestamp="2023-03-31T07:11:36" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/telemetry/connectionTelemetry.test.js" time="0.324" failures="0">
+    <testcase name="ConnectionTelemetry Controller Test Suite with live connection track new connection event fetches the connection instance information" time="0.273" classname="track new connection event fetches the connection instance information">
+    </testcase>
+  </testsuite>
+  <testsuite name="Telemetry Controller Test Suite" timestamp="2023-03-31T07:11:36" tests="13" file="/home/runner/work/vscode/vscode/out/test/suite/telemetry/telemetryService.test.js" time="0.000" failures="0">
+    <testcase name="Telemetry Controller Test Suite get segment key" time="0.001" classname="get segment key">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite track command run event" time="0.003" classname="track command run event">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite track new connection event when connecting via connection string" time="0.001" classname="track new connection event when connecting via connection string">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite track new connection event when connecting via connection form" time="0.001" classname="track new connection event when connecting via connection form">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite track new connection event when connecting via saved connection" time="0.001" classname="track new connection event when connecting via saved connection">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite track document saved form a tree-view event" time="0.000" classname="track document saved form a tree-view event">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite track document opened form playground results" time="0.000" classname="track document opened form playground results">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite track playground code executed event" time="0.000" classname="track playground code executed event">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite track playground loaded event" time="0.072" classname="track playground loaded event">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite track playground saved event" time="0.000" classname="track playground saved event">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite track link clicked event" time="0.001" classname="track link clicked event">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite track query exported to language" time="0.012" classname="track query exported to language">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite track aggregation exported to language" time="0.000" classname="track aggregation exported to language">
+    </testcase>
+  </testsuite>
+  <testsuite name="prepare playground result types" timestamp="2023-03-31T07:11:36" tests="13" file="/home/runner/work/vscode/vscode/out/test/suite/telemetry/telemetryService.test.js" time="0.062" failures="0">
+    <testcase name="Telemetry Controller Test Suite prepare playground result types convert AggregationCursor shellApiType to aggregation telemetry type" time="0.000" classname="convert AggregationCursor shellApiType to aggregation telemetry type">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite prepare playground result types convert BulkWriteResult shellApiType to other telemetry type" time="0.000" classname="convert BulkWriteResult shellApiType to other telemetry type">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite prepare playground result types convert Collection shellApiType to other telemetry type" time="0.000" classname="convert Collection shellApiType to other telemetry type">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite prepare playground result types convert Cursor shellApiType to other telemetry type" time="0.000" classname="convert Cursor shellApiType to other telemetry type">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite prepare playground result types convert Database shellApiType to other telemetry type" time="0.000" classname="convert Database shellApiType to other telemetry type">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite prepare playground result types convert DeleteResult shellApiType to other telemetry type" time="0.000" classname="convert DeleteResult shellApiType to other telemetry type">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite prepare playground result types convert InsertManyResult shellApiType to other telemetry type" time="0.000" classname="convert InsertManyResult shellApiType to other telemetry type">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite prepare playground result types convert InsertOneResult shellApiType to other telemetry type" time="0.000" classname="convert InsertOneResult shellApiType to other telemetry type">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite prepare playground result types convert ReplicaSet shellApiType to other telemetry type" time="0.000" classname="convert ReplicaSet shellApiType to other telemetry type">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite prepare playground result types convert Shard shellApiType to other telemetry type" time="0.000" classname="convert Shard shellApiType to other telemetry type">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite prepare playground result types convert ShellApi shellApiType to other telemetry type" time="0.000" classname="convert ShellApi shellApiType to other telemetry type">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite prepare playground result types convert UpdateResult shellApiType to other telemetry type" time="0.001" classname="convert UpdateResult shellApiType to other telemetry type">
+    </testcase>
+    <testcase name="Telemetry Controller Test Suite prepare playground result types return other telemetry type if evaluation returns a string" time="0.000" classname="return other telemetry type if evaluation returns a string">
+    </testcase>
+  </testsuite>
+  <testsuite name="Open Link Test Suite" timestamp="2023-03-31T07:11:36" tests="7" file="/home/runner/work/vscode/vscode/out/test/suite/utils/linkHelper.test.js" time="0.041" failures="0">
+    <testcase name="Open Link Test Suite the helper server is instantiated correctly" time="0.001" classname="the helper server is instantiated correctly">
+    </testcase>
+    <testcase name="Open Link Test Suite the browser opens correctly for mongodb.com" time="0.004" classname="the browser opens correctly for mongodb.com">
+    </testcase>
+    <testcase name="Open Link Test Suite the browser opens correctly for a subdomain of mongodb.com" time="0.003" classname="the browser opens correctly for a subdomain of mongodb.com">
+    </testcase>
+    <testcase name="Open Link Test Suite handles errors" time="0.002" classname="handles errors">
+    </testcase>
+    <testcase name="Open Link Test Suite does not allow insecure connections" time="0.001" classname="does not allow insecure connections">
+    </testcase>
+    <testcase name="Open Link Test Suite does not allow untrusted urls" time="0.000" classname="does not allow untrusted urls">
+    </testcase>
+    <testcase name="Open Link Test Suite does not allow untrusted urls that contain mongodb.com" time="0.000" classname="does not allow untrusted urls that contain mongodb.com">
+    </testcase>
+  </testsuite>
+  <testsuite name="ObjectId Test Suite" timestamp="2023-03-31T07:11:36" tests="3" file="/home/runner/work/vscode/vscode/out/test/suite/utils/objectIdHelper.test.js" time="0.240" failures="0">
+    <testcase name="ObjectId Test Suite succesfully creates an ObjectId" time="0.001" classname="succesfully creates an ObjectId">
+    </testcase>
+    <testcase name="ObjectId Test Suite should generate the same ObjectId when config is false" time="0.113" classname="should generate the same ObjectId when config is false">
+    </testcase>
+    <testcase name="ObjectId Test Suite should generate unique ObjectIds when config is true" time="0.114" classname="should generate unique ObjectIds when config is true">
+    </testcase>
+  </testsuite>
+  <testsuite name="Webview Test Suite" timestamp="2023-03-31T07:11:36" tests="13" file="/home/runner/work/vscode/vscode/out/test/suite/views/webviewController.test.js" time="0.000" failures="0">
+    <testcase name="Webview Test Suite it creates a web view panel and sets the html content" time="0.001" classname="it creates a web view panel and sets the html content">
+    </testcase>
+    <testcase name="Webview Test Suite web view content is rendered with the js form" time="0.037" classname="web view content is rendered with the js form">
+    </testcase>
+    <testcase name="Webview Test Suite web view content sets the segment anonymous id globally" time="0.002" classname="web view content sets the segment anonymous id globally">
+    </testcase>
+    <testcase name="Webview Test Suite web view listens for a connect message and adds the connection" time="0.045" classname="web view listens for a connect message and adds the connection">
+    </testcase>
+    <testcase name="Webview Test Suite web view sends a successful connect result on a successful connection" time="0.063" classname="web view sends a successful connect result on a successful connection">
+    </testcase>
+    <testcase name="Webview Test Suite web view sends an unsuccessful connect result on an unsuccessful connection" time="0.012" classname="web view sends an unsuccessful connect result on an unsuccessful connection">
+    </testcase>
+    <testcase name="Webview Test Suite web view sends an unsuccessful connect result on an attempt that is overridden" time="0.519" classname="web view sends an unsuccessful connect result on an attempt that is overridden">
+    </testcase>
+    <testcase name="Webview Test Suite web view opens file picker on file picker request" time="0.002" classname="web view opens file picker on file picker request">
+    </testcase>
+    <testcase name="Webview Test Suite web view returns file name on file picker request" time="0.001" classname="web view returns file name on file picker request">
+    </testcase>
+    <testcase name="Webview Test Suite web view runs the &quot;connectWithURI&quot; command when open connection string input is recieved" time="0.051" classname="web view runs the &quot;connectWithURI&quot; command when open connection string input is recieved">
+    </testcase>
+    <testcase name="Webview Test Suite webview returns the connection status on a connection status request" time="0.001" classname="webview returns the connection status on a connection status request">
+    </testcase>
+    <testcase name="Webview Test Suite webview returns the connection status on a connection status request" time="0.012" classname="webview returns the connection status on a connection status request">
+    </testcase>
+    <testcase name="Webview Test Suite calls to rename the active connection when a rename active connection message is passed" time="0.020" classname="calls to rename the active connection when a rename active connection message is passed">
+    </testcase>
+  </testsuite>
+  <testsuite name="with a rendered webview" timestamp="2023-03-31T07:11:38" tests="1" file="/home/runner/work/vscode/vscode/out/test/suite/views/webviewController.test.js" time="0.003" failures="0">
+    <testcase name="Webview Test Suite with a rendered webview it should handle opening trusted links" time="0.000" classname="it should handle opening trusted links">
+    </testcase>
+  </testsuite>
+</testsuites>

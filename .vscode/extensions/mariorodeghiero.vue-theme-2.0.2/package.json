@@ -1,0 +1,68 @@
+{
+	"name": "vue-theme",
+	"version": "2.0.2",
+	"displayName": "Vue Theme",
+	"description": "Theme for Visual Studio Code inspired by javascript, with support for more popular languages and a perfect harmony of colors",
+	"publisher": "mariorodeghiero",
+	"icon": "images/vue.png",
+	"galleryBanner": {
+		"color": "#002b36",
+		"theme": "dark"
+	},
+	"homepage": "https://mariorodeghiero.github.io/vue-theme/",
+	"maintainers": [
+		"Mario Rodeghiero <mario.rodeghiero@gmail.com>"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mariorodeghiero/vue-theme-vscode.git"
+	},
+	"bugs": {
+		"url": "https://github.com/mariorodeghiero/vue-theme-vscode/issues"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"VSCode",
+		"Themes",
+		"theme",
+		"color-theme",
+		"vue-theme",
+		"vue",
+		"react",
+		"reactjs"
+	],
+	"engines": {
+		"vscode": "^1.19.0"
+	},
+	"scripts": {
+		"build": "vsce package"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Vue Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/vue-theme-color-theme.json"
+			},
+			{
+				"label": "Vue Theme High Contrast",
+				"uiTheme": "hc-black",
+				"path": "./themes/vue-theme-color-theme-high-contrast.json"
+			}
+		]
+	},
+	"license": "MIT",
+	"__metadata": {
+		"id": "6b99015e-561b-4192-8b83-b2120a523567",
+		"publisherId": "8b089f94-0ff6-439a-b4d6-2ba79133d533",
+		"publisherDisplayName": "mariorodeghiero",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": true,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1666104629592
+	}
+}
